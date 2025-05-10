@@ -1,0 +1,51 @@
+@keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+        .toast {
+            transition: all 0.3s ease;
+        }
+        .toast-enter {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .toast-enter-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .toast-exit {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .toast-exit-active {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .qr-code-container {
+            transition: all 0.3s ease;
+        }
+        .qr-code-placeholder {
+            background: repeating-conic-gradient(#f3f4f6 0% 25%, #e5e7eb 0% 50%);
+            background-size: 20px 20px;
+        }
+        .dark .qr-code-placeholder {
+            background: repeating-conic-gradient(#1f2937 0% 25%, #111827 0% 50%);
+            background-size: 20px 20px;
+        }
+        [role="tab"]:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        [role="tabpanel"]:focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
